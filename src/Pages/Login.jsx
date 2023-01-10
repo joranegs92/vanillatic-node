@@ -7,13 +7,19 @@ function Login({}) {
 	const passwdRef = useRef();
 	const login = () =>{
 			axios.post(
-				'http://localhost:8080/login',
+				'/api/login',
 				JSON.stringify({
 					email : emailRef.current.value,
 					password: passwdRef.current.value
 				}),
 				{headers: {'Content-Type': "application/json"}}).then(({data})=>{
-					alert("로그인되었습니다.")
+				const {code, message, lvl, result} = data;
+				if (code === '00') {
+					localStorage.setItem('Authorization', result);
+					localStorage.setItem('lvl', lvl);
+				}else{
+					alert(message)
+				}
 				}).catch(e => console.error(e))
 
 	}
@@ -23,7 +29,7 @@ function Login({}) {
 				<div class="logo">
 				</div>
 				<h1>WELCOME TO VANILLATIC</h1>
-				<form action="#"/>
+				<form action="src/Pages/Login#"/>
 					<div class="int-area">
 						<input type="text" id="userId" autocomplete="off" ref={emailRef}/> >
 							<label for="userId">E-mail</label>

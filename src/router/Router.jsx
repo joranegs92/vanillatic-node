@@ -6,7 +6,6 @@ import Mypage from "../Pages/Mypage";
 function Router() {
     return (
         <Routes>
-
             <Route path='/join' element={<Join/>}/>
             <Route path='/login' element={<Login/>}/>
             <Route path='/mypage' element={<Mypage/>}/>

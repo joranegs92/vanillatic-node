@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import './Asset/style.css'
 import Header from "./Layouts/Header";
 import {Route, Routes,BrowserRouter, useLocation, useNavigate} from "react-router-dom";
 import Main from "./Layouts/Main";

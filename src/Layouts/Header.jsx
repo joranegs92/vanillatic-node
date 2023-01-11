@@ -12,23 +12,8 @@ const menu = [
 		parent: '게시판',
 		lvl:2,
 		child: [
-			{name: '생활치료센터 리스트', url: '/treatmentCenterPatient'},
-			{name: '생활치료센터 대시보드', url: '/dashboard/center'},
-		]
-	},
-	{
-		parent: '자택격리자',
-		lvl:2,
-		child: [
-			{name: '자택격리자 리스트', url: '/isolationPatient'},
-			{name: '자택격리환자 대시보드', url: '/dashboard/quarantine'},
-		]
-	},
-	{
-		parent: '문의사항',
-		lvl:2,
-		child: [
-			{name: '문의사항', url: '/qna'},
+			{name: '', url: '/'},
+
 		]
 	}
 ]
@@ -46,6 +31,9 @@ function Header({}) {
 		<header className="header">
 			<aside className="bg-white" id="sidebar-wrapper">
 				<div className="sidebar-heading">
+
+				</div>
+				<div>
 
 				</div>
 				{/*<nav className="navbar-light">

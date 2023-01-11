@@ -1,5 +1,6 @@
 import Router from "../router/Router"
 import React, {useCallback, useContext, useRef, useState} from 'react';
+import common from "../Utils/common";
 function Main() {
     return (
         <main>

@@ -28,11 +28,11 @@ function Card({data}) {
 			<Cardh className="card icard">
 				<ColorHeader className="card-header d-flex" >
 
-					<span className="age ms-auto">gg</span>
+					<span className="age ms-auto">제목</span>
 				</ColorHeader>
 				<div className="pinfo d-flex">
 					<div className='grid'>
-
+						이미지같은거
 					</div>
 					<div className="name ms-auto">{data.patientNm}</div>
 				</div>

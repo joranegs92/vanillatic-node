@@ -1,13 +1,12 @@
 import React from 'react';
 import styled from "styled-components";
 import Card from "../Component/Card";
-
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
 
 function Detail() {
 
-    const testMap = [
-
-            {
+    const testMap = [            {
                 "id" : 1,
                 "title":"happy",
                 "name":"to"
@@ -21,7 +20,17 @@ function Detail() {
                 "id" : 3,
                 "title":"happy",
                 "name":"to"
-            }
+            },
+        {
+            "id" : 3,
+            "title":"happy",
+            "name":"to"
+        },
+        {
+            "id" : 3,
+            "title":"happy",
+            "name":"to"
+        }
 
     ]
 

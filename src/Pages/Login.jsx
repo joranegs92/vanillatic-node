@@ -7,10 +7,10 @@ function Login({}) {
 	const passwdRef = useRef();
 	const login = () =>{
 			axios.post(
-				'/api/login',
+				'/api' +'/members/login',
 				JSON.stringify({
-					email : emailRef.current.value,
-					password: passwdRef.current.value
+					user_id : emailRef.current.value,
+
 				}),
 				{headers: {'Content-Type': "application/json"}}).then(({data})=>{
 				const {code, message, lvl, result} = data;
